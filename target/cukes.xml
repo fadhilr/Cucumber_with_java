@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="0.27">
+<testcase classname="Application Login" name="Home page default login" time="0.062">
+<system-out><![CDATA[Given User is on netBanking landing page....................................passed
+When User login into application with "jin" and "1234"......................passed
+Then Home page is populated.................................................passed
+And Cards displayed "true"..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Application Login" name="Home page default login and card not displayed" time="0.01">
+<system-out><![CDATA[Given User is on netBanking landing page....................................passed
+When User login into application with "john" and "321"......................passed
+Then Home page is populated.................................................passed
+And Cards displayed "mobile"................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Application Login" name="Home page default login and card not displayed 2" time="0.007">
+<system-out><![CDATA[Given User is on netBanking landing page....................................passed
+When User login into application with "john" and "321"......................passed
+Then Home page is populated.................................................passed
+And Cards displayed "mobile"................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
