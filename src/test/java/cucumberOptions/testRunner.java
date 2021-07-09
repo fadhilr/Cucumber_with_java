@@ -9,9 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/java/features",
 		glue = "stepDefinitions", stepNotifications = true, 
-		tags = "@MobileTest",
-		strict=true,monochrome=true,
+		tags = "@SeleniumSmoke", monochrome=true,
 		plugin= {"pretty","html:target/cucumber.html","json:target/cucumber.json","junit:target/cukes.xml"})
-public class testRunner {
+public class TestRunner {
 	
 }
