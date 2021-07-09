@@ -3,318 +3,209 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-07-02T03:43:27.848Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.beforevalidation()"
-            }
-          }
-        ],
-        "line": 5,
-        "name": "Home page default login",
+        "start_timestamp": "2021-07-08T10:03:51.685Z",
+        "line": 19,
+        "name": "Search for item and move to checkout page",
         "description": "",
-        "id": "application-login;home-page-default-login",
+        "id": "search-and-place-order-for-vegetables;search-for-item-and-move-to-checkout-page;;2",
         "after": [
           {
             "result": {
+              "duration": 283000000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefinitions.Hooks.aftervalidation()"
+              "location": "stepDefinitions.Hooks.afterSeleniumCase()"
             }
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
+              "duration": 7347000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User is on netBanking landing page",
+            "line": 11,
+            "name": "User is on green cart landing page",
             "match": {
-              "location": "stepDefinitions.stepDefinition.user_is_on_netbanking_landing_page()"
+              "location": "stepDefinitions.stepDefinitionSearch.user_is_on_green_cart_landing_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2187000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User login into application with \"jin\" and \"1234\"",
+            "line": 12,
+            "name": "User searched for Brinjal vegetables",
             "match": {
               "arguments": [
                 {
-                  "val": "jin",
-                  "offset": 34
-                },
-                {
-                  "val": "1234",
-                  "offset": 44
+                  "val": "Brinjal",
+                  "offset": 18
                 }
               ],
-              "location": "stepDefinitions.stepDefinition.user_login_into_application_with_something_and_something(java.lang.String,java.lang.String)"
+              "location": "stepDefinitions.stepDefinitionSearch.user_searched_for_vegetable(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
+              "duration": 168000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "Home page is populated",
+            "line": 13,
+            "name": "Added item to cart",
             "match": {
-              "location": "stepDefinitions.stepDefinition.home_page_is_populated()"
+              "location": "stepDefinitions.stepDefinitionSearch.added_item_to_cart()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
+              "duration": 129000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "Cards displayed \"true\"",
+            "line": 14,
+            "name": "User proceeded to Checkout page for purchase",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionSearch.user_proceeded_to_checkout_page_for_purchase()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify selected Brinjal item are displayed in Checkout page",
             "match": {
               "arguments": [
                 {
-                  "val": "true",
-                  "offset": 17
+                  "val": "Brinjal",
+                  "offset": 16
                 }
               ],
-              "location": "stepDefinitions.stepDefinition.cards_displayed_something(java.lang.String)"
+              "location": "stepDefinitions.stepDefinitionSearch.verify_selected_item_are_displayed_in_checkout_page(java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@MobileTest"
-          }
-        ]
-      }
-    ],
-    "name": "Application Login",
-    "description": "",
-    "id": "application-login",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/features/Account.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2021-07-02T03:43:27.918Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.beforevalidation()"
-            }
-          }
-        ],
-        "line": 23,
-        "name": "Home page default login and card not displayed",
-        "description": "",
-        "id": "application-login;home-page-default-login-and-card-not-displayed",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.aftervalidation()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User is on netBanking landing page",
-            "match": {
-              "location": "stepDefinitions.stepDefinition.user_is_on_netbanking_landing_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User login into application with \"john\" and \"321\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "john",
-                  "offset": 34
-                },
-                {
-                  "val": "321",
-                  "offset": 45
-                }
-              ],
-              "location": "stepDefinitions.stepDefinition.user_login_into_application_with_something_and_something(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "Home page is populated",
-            "match": {
-              "location": "stepDefinitions.stepDefinition.home_page_is_populated()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "Cards displayed \"mobile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "mobile",
-                  "offset": 17
-                }
-              ],
-              "location": "stepDefinitions.stepDefinition.cards_displayed_something(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@MobileTest"
+            "name": "@SeleniumRegression"
           }
         ]
       },
       {
-        "start_timestamp": "2021-07-02T03:43:27.931Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefinitions.Hooks.beforevalidation()"
-            }
-          }
-        ],
-        "line": 30,
-        "name": "Home page default login and card not displayed",
+        "start_timestamp": "2021-07-08T10:04:01.948Z",
+        "line": 20,
+        "name": "Search for item and move to checkout page",
         "description": "",
-        "id": "application-login;home-page-default-login-and-card-not-displayed",
+        "id": "search-and-place-order-for-vegetables;search-for-item-and-move-to-checkout-page;;3",
         "after": [
           {
             "result": {
+              "duration": 453000000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefinitions.Hooks.aftervalidation()"
+              "location": "stepDefinitions.Hooks.afterSeleniumCase()"
             }
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 7400000000,
               "status": "passed"
             },
-            "line": 31,
-            "name": "User is on netBanking landing page",
+            "line": 11,
+            "name": "User is on green cart landing page",
             "match": {
-              "location": "stepDefinitions.stepDefinition.user_is_on_netbanking_landing_page()"
+              "location": "stepDefinitions.stepDefinitionSearch.user_is_on_green_cart_landing_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
+              "duration": 2254000000,
               "status": "passed"
             },
-            "line": 32,
-            "name": "User login into application with \"john\" and \"321\"",
+            "line": 12,
+            "name": "User searched for Beetroot vegetables",
             "match": {
               "arguments": [
                 {
-                  "val": "john",
-                  "offset": 34
-                },
-                {
-                  "val": "321",
-                  "offset": 45
+                  "val": "Beetroot",
+                  "offset": 18
                 }
               ],
-              "location": "stepDefinitions.stepDefinition.user_login_into_application_with_something_and_something(java.lang.String,java.lang.String)"
+              "location": "stepDefinitions.stepDefinitionSearch.user_searched_for_vegetable(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 165000000,
               "status": "passed"
             },
-            "line": 33,
-            "name": "Home page is populated",
+            "line": 13,
+            "name": "Added item to cart",
             "match": {
-              "location": "stepDefinitions.stepDefinition.home_page_is_populated()"
+              "location": "stepDefinitions.stepDefinitionSearch.added_item_to_cart()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 122000000,
               "status": "passed"
             },
-            "line": 34,
-            "name": "Cards displayed \"mobile\"",
+            "line": 14,
+            "name": "User proceeded to Checkout page for purchase",
+            "match": {
+              "location": "stepDefinitions.stepDefinitionSearch.user_proceeded_to_checkout_page_for_purchase()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify selected Beetroot item are displayed in Checkout page",
             "match": {
               "arguments": [
                 {
-                  "val": "mobile",
-                  "offset": 17
+                  "val": "Beetroot",
+                  "offset": 16
                 }
               ],
-              "location": "stepDefinitions.stepDefinition.cards_displayed_something(java.lang.String)"
+              "location": "stepDefinitions.stepDefinitionSearch.verify_selected_item_are_displayed_in_checkout_page(java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@MobileTest"
+            "name": "@SeleniumRegression"
           }
         ]
       }
     ],
-    "name": "Application Login",
+    "name": "Search and place order for vegetables",
     "description": "",
-    "id": "application-login",
+    "id": "search-and-place-order-for-vegetables",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/Login.feature",
+    "uri": "file:src/test/java/features/Search.feature",
     "tags": []
   }
 ]
