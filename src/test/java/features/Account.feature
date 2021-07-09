@@ -1,4 +1,4 @@
-Feature: Application Login
+Feature: Application Account
 
 
 @MobileTest
